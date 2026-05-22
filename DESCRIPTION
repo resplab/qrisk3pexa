@@ -1,0 +1,15 @@
+Package: qrisk3pexa
+Title: QRISK3 Model Wrapper for the ModelsCloud Platform
+Version: 0.1.0
+Authors@R:
+    person("Mohsen", "Sadatsafavi", email = "mohsen.sadatsafavi@ubc.ca",
+           role = c("aut", "cre"))
+Description: Wraps the QRISK3 cardiovascular risk model and exposes it
+    through the standard ModelsCloud (pexacloud) API, providing
+    getDefaultInput(), getSampleInput(), and run() entry points.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    QRISK3
+Config/roxygen2/version: 8.0.0
