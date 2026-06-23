@@ -116,3 +116,40 @@ get_sample_input <- function(n = NULL) {
 
   df
 }
+
+
+#' Get the default input for the QRISK3 model
+#'
+#' Returns a single-row data frame representing a typical patient profile with
+#' no elevated risk factors — useful as a baseline for exploring the model.
+#'
+#' @return Named list of default input values.
+#' @export
+get_default_input <- function() {
+  list(
+    patid                        = 1L,
+    gender                       = 1L,
+    age                          = 50,
+    atrial_fibrillation          = 0L,
+    atypical_antipsy             = 0L,
+    regular_steroid_tablets      = 0L,
+    erectile_disfunction         = 0L,
+    migraine                     = 0L,
+    rheumatoid_arthritis         = 0L,
+    chronic_kidney_disease       = 0L,
+    severe_mental_illness        = 0L,
+    systemic_lupus_erythematosis = 0L,
+    blood_pressure_treatment     = 0L,
+    diabetes1                    = 0L,
+    diabetes2                    = 0L,
+    weight                       = 80,
+    height                       = 175,
+    ethiniciy                    = 1L,
+    heart_attack_relative        = 0L,
+    cholesterol_HDL_ratio        = 4.0,
+    systolic_blood_pressure      = 120,
+    std_systolic_blood_pressure  = 0,
+    smoke                        = 0L,
+    townsend                     = 0
+  )
+}

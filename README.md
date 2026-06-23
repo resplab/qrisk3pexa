@@ -49,7 +49,7 @@ library(modelscloud)
 # Request an API key from the ModelsCloud team, or set MODELSCLOUD_ACCESS_KEY
 # in your .Renviron instead of passing access_key here.
 connect_to_model(
-  model_path = "mohsenss/qrisk3pexa",
+  model_path = "resplab/qrisk3pexa",
   access_key = "YOUR_API_KEY"
 )
 
