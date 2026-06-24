@@ -56,10 +56,8 @@ connect_to_model(
 # 1. Fetch a ready-to-run example dataset, then run the model.
 input  <- get_sample_input()
 result <- model_run(input)
-head(result[, c("ID", "QRISK3_2017")])
-#>   ID QRISK3_2017
-#> 1  1    17.22985
-#> 2  2    36.01234
+head(result[, c("patid", "QRISK3_2017")])
+
 
 # 2. Score the first few example patients only.
 result <- model_run(get_sample_input(n = 3))
